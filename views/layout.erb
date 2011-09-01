@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta property="og:title" content="List of Inspirational Quotes"/>
+      <meta property="og:type" content="website"/>
+      <meta property="og:image" content="http://inspirational-quotes.heroku.com/images/heroku_logo.png"/>
+      <meta property="og:url" content="http://inspirational-quotes.heroku.com/"/>
+      <meta property="og:site_name" content="Heroku:Inspirational Quotes"/>
+      <meta property="fb:admins" content="127620657336562"/>
+
+    <title>Inspirational Quotes</title>
+    <style>
+      body { font-family: Arial; font-size: 20px ;}
+      a { text-decoration: none; color: #333; }
+      .logout a { color: #2554C7; font-size: 15px; }
+      .quote { font-size: 0.625em; }
+      .like_site { font-size: 0.8em }
+    </style>
+  </head>
+  <body>
+  	<div id="fb-root"></div>
+      <script src="http://connect.facebook.net/en_US/all.js"></script>
+      <script>
+         FB.init({ 
+            appId:'127620657336562', cookie:true, 
+            status:true, xfbml:true 
+         });
+      </script>  	
+    <%= yield %>
+  </body>
+</html>
